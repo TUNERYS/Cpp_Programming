@@ -16,7 +16,7 @@ const int num = 10;
 
 2. ptr1을 이용해서 val1의 값 변경 불가
 ```C++
-const (int *) ptr1 = val1;
+const (int *) ptr1 = &val1;
 ```   
 
 3. ptr2가 가리키는 대상을 val2의 주소만으로 고정
