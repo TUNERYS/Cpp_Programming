@@ -14,19 +14,19 @@
 const int num = 10;
 ```   
 
-2. ptr1을 이용해서 val1의 값 변경 불가
+2. ptr1을 이용해서 val1의 값 변경 불가 (* ptr을 상수화)
 ```C++
 const (int *) ptr1 = &val1;
 ```   
 
-3. ptr2가 가리키는 대상을 val2의 주소만으로 고정
+3. ptr2가 가리키는 대상을 val2의 주소만으로 고정 (ptr을 상수화)
 - val2의 값은 변경 가능하다
 ```C++
 (int *) const ptr2 = &val2;
 ```   
 
-4. 포인터 ptr3가 상수화
-- ptr3값을 이용하여 val3값 변경 불가능
+4. 포인터 ptr3가 상수화 
+- ptr3값을 이용하여 val3값 변경 불가능 및 ptr3가 가리키는 대상을 val3만의 주소 고정
 ```C++
 const (int *) const ptr3 = &vla3;
 ```   
